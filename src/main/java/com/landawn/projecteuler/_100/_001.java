@@ -1,17 +1,18 @@
-package com.landawn.projecteuler;
+package com.landawn.projecteuler._100;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
 import com.landawn.abacus.util.stream.IntStream;
+import com.landawn.projecteuler.TestBase;
 
 /**
  * 
  * @see <a href="https://projecteuler.net/problem=1">Multiples of 3 and 5</a>
  * 
  */
-public class _1 extends TestBase {
+public class _001 extends TestBase {
 
     @Override
     @Test

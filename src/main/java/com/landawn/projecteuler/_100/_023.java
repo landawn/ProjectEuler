@@ -1,4 +1,4 @@
-package com.landawn.projecteuler;
+package com.landawn.projecteuler._100;
 
 import static org.junit.Assert.assertEquals;
 
@@ -8,13 +8,14 @@ import org.junit.Test;
 
 import com.landawn.abacus.util.Array;
 import com.landawn.abacus.util.stream.IntStream;
+import com.landawn.projecteuler.TestBase;
 
 /**
  * 
  * @see <a href="https://projecteuler.net/problem=23">Non-abundant sums</a>
  * 
  */
-public class _23 extends TestBase {
+public class _023 extends TestBase {
 
     @Override
     @Test
