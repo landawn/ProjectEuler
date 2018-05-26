@@ -93,4 +93,20 @@ public abstract class TestBase {
 
         return str.equals(StringUtil.reverse(str));
     }
+
+    public static int gcd(final int a, final int b) {
+        if (b == 0) {
+            return a;
+        } else {
+            return gcd(b, a % b);
+        }
+    }
+
+    public static long gcd(final long a, final long b) {
+        if (b == 0) {
+            return a;
+        } else {
+            return gcd(b, a % b);
+        }
+    }
 }
