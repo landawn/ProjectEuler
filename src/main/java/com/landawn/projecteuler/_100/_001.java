@@ -25,8 +25,8 @@ public class _001 extends TestBase {
     @Test
     public void s_2() {
         long result = IntStream.rangeClosed(0, 999 / 3).map(i -> i * 3).sum();
-        result = result + IntStream.rangeClosed(0, 999 / 5).map(i -> i * 5).sum();
-        result = result - IntStream.rangeClosed(0, 999 / 15).map(i -> i * 15).sum();
+        result += IntStream.rangeClosed(0, 999 / 5).map(i -> i * 5).sum();
+        result -= IntStream.rangeClosed(0, 999 / 15).map(i -> i * 15).sum();
 
         assertEquals(233168, result);
     }

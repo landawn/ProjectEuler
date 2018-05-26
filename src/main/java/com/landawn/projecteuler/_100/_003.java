@@ -16,22 +16,16 @@ public class _003 extends TestBase {
     @Override
     @Test
     public void s_1() {
-        int result = 0;
+        final long n = 600851475143L;
+        int result = 1;
 
-        int num1 = 1;
-        int num2 = 1;
-        int next = num1 + num2;
-
-        while (next < 4000_001) {
-            if (next % 2 == 0) {
-                result += next;
+        for (int i = (int) Math.sqrt(n); i > 0; i--) {
+            if (n % i == 0 && isPrime(i)) {
+                result = i;
+                break;
             }
-
-            num1 = num2;
-            num2 = next;
-            next = num1 + num2;
         }
 
-        assertEquals(4613732, result);
+        assertEquals(6857, result);
     }
 }
