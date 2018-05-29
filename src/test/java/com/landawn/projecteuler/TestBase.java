@@ -4,7 +4,7 @@ import static org.junit.Assert.fail;
 
 import org.junit.Test;
 
-import com.landawn.abacus.util.Maths.Matth;
+import com.landawn.abacus.util.Matth;
 import com.landawn.abacus.util.N;
 import com.landawn.abacus.util.Profiler;
 import com.landawn.abacus.util.StringUtil;
